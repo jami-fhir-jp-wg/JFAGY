@@ -8,6 +8,7 @@ Description: "JFAGY アレルゲンコード（食品）"
 * ^date = "2024-07-09"
 * ^version = "20240709"
 * ^caseSensitive = true
+* ^hierarchyMeaning = #is-a
 * ^content = #complete
 * ^copyright = "Copyright 東京大学大学院医学系研究科医療情報学分野, 一般社団法人日本医療情報学会"
 * ^publisher = "東京大学大学院医学系研究科医療情報学分野"
