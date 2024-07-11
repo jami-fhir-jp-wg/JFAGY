@@ -1,0 +1,33 @@
+name: Ohe-Develp and  Dispatch
+on:
+  push:
+    branches: 
+      - master
+    paths:
+      - 'sushi-config.yaml'
+      - 'input/**'
+      - '.github/workflows/master_develop.yaml'
+  pull_request:
+    branches: [ master ]
+env:
+  release_version : 20240709
+jobs:
+  turn1:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['3.0']
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup npm
+      uses: actions/setup-node@v2
+      with:
+        check-latest: true
+    - name: Setup Sushi
+      run: |
+        sudo npm install -g fsh-sushi
+  
+    - name: run sushi
+      run: |
+        sushi .
