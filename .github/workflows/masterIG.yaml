@@ -1,0 +1,71 @@
+name: Punlishing IG for JFAGY without production of packages
+on:
+  push:
+    branches: 
+      - master
+    paths:
+      - 'sushi-config.yaml'
+      - 'input/**'
+      - '.github/workflows/masterIG.yaml'
+  pull_request:
+    branches: [ master ]
+env:
+  release_version : 20240709
+jobs:
+  turn1:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['3.0']
+    environment: SSH_PORT_JPFHIR  # JAMI WG アップロードサイトに関するアクセス情報の環境名
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup npm
+      uses: actions/setup-node@v2
+      with:
+        check-latest: true
+
+    - name: Setup Sushi
+      run: |
+        sudo npm install -g fsh-sushi
+  
+    - name: Install Jekyll
+      run: |
+        sudo apt-get install jekyll
+  
+    - name: Download IG Publisher
+      uses: Legion2/download-release-action@v2.1.0
+      with:
+        repository: HL7/fhir-ig-publisher
+        tag: 'latest'
+        path: .
+        file: publisher.jar
+
+    - name: Run IG Publisher        
+      run: | 
+        mkdir -p input-cache
+        mv ./publisher.jar ./input-cache
+        unset DISPLAY
+        java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
+
+    - name: prepare gtz files for upload to remote site
+      run: | 
+        ruby ./script/create_symbolic_link_from_file2url.rb
+        : # 次の行のmakeSymbolicLink.bashは、直上のrubyスクリプトによって新たに作成されるbashスクリプトで、symbolic_linkを実際にln -s コマンドを順に実行して作成するスクリプト。
+        : # cat makeSymbolicLink.bash
+        cd output
+        source ../makeSymbolicLink.bash
+        : # ls -l
+        cd ..
+        tar czf output.tgz output
+
+    - name: ssh key generate
+      run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_TO_JPFHIR }}
+
+    - name: rsync remote-site-deploy
+      run: |
+        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/ ; tar xzf output.tgz'
+

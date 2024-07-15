@@ -170,12 +170,18 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 
 #### FHIR CodeSystem JSON形式
 
-  - 準備中
+|領域| CodeSystem |
+|----|----|
+|食品|[JP_JfagyFoodAllergen_CS](https://jpfhir.jp/fhir/core/terminology/JFAGY/latest/CodeSystem-jp-jfagy-food-allergen-cs.json)|
+|非食品・非医薬品|[JP_JfagyNonFoodNonMedicationAllergen_CS]([JP_JfagyFoodAllergen_CS](https://jpfhir.jp/fhir/core/terminology/JFAGY/latest/CodeSystem-jp-jfagy-non-food-non-medication-allergen-cs))|
+|医薬品|[JP_JfagyMedicationAllergen_CS]([JP_JfagyFoodAllergen_CS](https://jpfhir.jp/fhir/core/terminology/JFAGY/latest/CodeSystem-jp-jfagy-food-allergen-cs.json))|
+
+
+  - 
+  - JP_JfagyNonFoodNonMedicationAllergen_CS
+  - JP_JfagyMedicationAllergen_CS
 
 #### FHIR CodeSystem FSH形式
-
-  - 準備中
-
 
 
 {% include markdown-link-references.md %}
