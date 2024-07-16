@@ -68,4 +68,10 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - json
   no-validate:
     - '*/hl7.fhir.jp.core'
+  special-url:
+    - http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS
+    - http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS
+    - http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagySpecialCode_CS
+    - http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS
+  
   
