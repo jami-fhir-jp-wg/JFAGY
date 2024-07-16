@@ -58,7 +58,7 @@ jobs:
         source ../makeSymbolicLink.bash
         : # ls -l
         cd ..
-        cd excel_files/*.xlsx .
+        cp excel_files/*.xlsx .
         tar czf output.tgz output
 
     - name: ssh key generate
