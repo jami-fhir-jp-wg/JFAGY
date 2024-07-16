@@ -136,9 +136,9 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 
 |領域| CodeSystem名称 | CodeSystem URL　|
 |----|----|----|
-|食品|JP_JfagyFoodAllergen_CS|http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS|
-|非食品・非医薬品|JP_JfagyNonFoodNonMedicationAllergen_CS|http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS|
-|医薬品|JP_JfagyMedicationAllergen_CS|http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS|
+|食品|JP_JfagyFoodAllergen_CS|(http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS)|
+|非食品・非医薬品|JP_JfagyNonFoodNonMedicationAllergen_CS|(http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS)|
+|医薬品|JP_JfagyMedicationAllergen_CS|(http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS)|
 
   - 食品（JP_JfagyFoodAllergen_CS）CodeSystemには、すべてのJFAGY食品コード("00F"を含む)、および食品ダミーコード("D9F000000000")が含まれ、コードにはメタコード3桁が含まれる。
   - 非食品・非医薬品（JP_JfagyNonFoodNonMedicationAllergen_CS）CodeSystemには、すべてのJFAGY非食品・非医薬品コード("00N"を含む)、および非食品・非医薬品ダミーコード("D9N000000000")が含まれ、コードにはメタコード3桁を含まれる。
@@ -151,7 +151,7 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 
 | ValueSet名称 | ValueSet URL |
 |----|----|
-| JP_AllergyIntolerance_VS | http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS|
+| JP_AllergyIntolerance_VS | (http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS)|
 
 
 <br>含まれるCodeSystem:   
