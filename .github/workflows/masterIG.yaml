@@ -46,8 +46,10 @@ jobs:
       run: | 
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
+        cp tgz-temp/*.tgz /home/runner/.fhir/packages
+        tar xzf hl7.terminology.r4-6.0.0.tgz
         unset DISPLAY
-        java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini -no-network   -tx n/a
+        java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini -tx n/a
 
     - name: prepare gtz files for upload to remote site
       run: | 
