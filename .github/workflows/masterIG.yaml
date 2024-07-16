@@ -47,7 +47,7 @@ jobs:
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
         unset DISPLAY
-        java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini -no-network
+        java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini -no-network   -tx n/a
 
     - name: prepare gtz files for upload to remote site
       run: | 
