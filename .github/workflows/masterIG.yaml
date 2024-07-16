@@ -41,6 +41,7 @@ jobs:
         tag: '1.6.11'
         path: .
         file: publisher.jar
+
     - name: Download the file
       uses: suisei-cn/actions-download-file@v1.4.0
       id: downloadfile1
