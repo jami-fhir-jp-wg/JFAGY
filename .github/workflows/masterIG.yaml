@@ -61,12 +61,16 @@ jobs:
         cd /home/runner/.fhir
         tar xzf $JPPACKAGECOREtgz
 
-    - name: Run IG Publisher        
+    - name: cp tgz-temp/*.tgz       
+      run: | 
+        cp tgz-temp/*.tgz /home/runner/.fhir/packages
+        cd /home/runner/.fhir/packages
+        tar xzf hl7.terminology.r4-6.0.0.tgz
+
+    - name: Run IG Publisher
       run: | 
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
-        cp tgz-temp/*.tgz /home/runner/.fhir/packages
-        tar xzf hl7.terminology.r4-6.0.0.tgz
         unset DISPLAY
         java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini -tx n/a
 
