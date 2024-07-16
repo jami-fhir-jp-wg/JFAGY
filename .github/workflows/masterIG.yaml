@@ -42,6 +42,25 @@ jobs:
         path: .
         file: publisher.jar
 
+    - name: Download the file
+      uses: suisei-cn/actions-download-file@v1.4.0
+      id: downloadfile1
+      with:
+        url: "https://jpfhir.jp/fhir/fhir_dotFHIR_packages.tgz"
+        target: .
+  
+      - name: Prepare for using all dependent packages including Jp modified version of hl7.fhir.r4.core Package 
+      env:
+        JPPACKAGECOREtgz: fhir_dotFHIR_packages.tgz
+      run: |
+        ls -l .
+        pwd
+        echo '--1-'
+        mkdir -p /home/runner/.fhir
+        mv $JPPACKAGECOREtgz /home/runner/.fhir/
+        cd /home/runner/.fhir
+        tar xzf $JPPACKAGECOREtgz
+
     - name: Run IG Publisher        
       run: | 
         mkdir -p input-cache
@@ -50,6 +69,7 @@ jobs:
         tar xzf hl7.terminology.r4-6.0.0.tgz
         unset DISPLAY
         java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini -tx n/a
+
     - name: prepare gtz files for upload to remote site
       run: | 
         ruby ./script/create_symbolic_link_from_file2url.rb
