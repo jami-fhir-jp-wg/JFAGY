@@ -1,18 +1,4 @@
 
-table {
-  border: solid 1px black;
-  border-collapse: collapse;
-}
- 
-table td {
-  border: solid 1px black;
-
-}
-
-table th {
-  border: solid 1px black;
-}
-
 
 ###  J-FAGYアレルゲンコード
 

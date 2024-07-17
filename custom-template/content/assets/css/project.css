@@ -571,9 +571,14 @@ p>img {
   margin-left: 0;
 }
 
+.table {
+  border: solid 2px black;
+}
+
 .table td {
   padding: 6px;
   line-height: 18px;
+  border: solid 1px black;
 }
 
 .table th h1,
@@ -583,6 +588,10 @@ p>img {
 .table th h5,
 .table th h6 {
   margin-bottom: 0;
+}
+
+.table th {
+  border: solid 1px black;
 }
 
 .table th.inverted {
@@ -599,6 +608,8 @@ p>img {
 .table th.inverted h6 {
   color: inherit;
 }
+
+
 
 pre {
   font-size: 12px;
@@ -941,5 +952,5 @@ pre[class*="language-"] {
 
 code[class*="language-"] {
   white-space: pre-wrap;
-  overflow-wrap:  break-word;
+  overflow-wrap: break-word;
 }
