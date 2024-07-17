@@ -1,3 +1,6 @@
+.table-page {
+  margin-left: 5%;
+}
 
 
 ###  J-FAGYアレルゲンコード
@@ -16,7 +19,7 @@ JFAGYコードは、メタコードと呼ばれる3文字コード列と、そ�
   - 3桁目：コアコードが対象とするアレルゲン領域区分識別コード。F=食品、M=医薬品、N=非食品・非医薬品、0=全領域（領域不明の特定できない一つ以上のアレルゲン）。
 
 
-<table border="1" style="border-collapse: collapse">
+<table border="1" class="table-page" style="border-collapse: collapse">
   <thead>
     <tr>
       <th>1桁目</th>
@@ -124,7 +127,7 @@ JFAGYコードは、メタコードと呼ばれる3文字コード列と、そ�
 ###  コアコード
 コアコードは、メタコードに続く7から12桁のコードで、個別のアレルゲンを識別する。ただし、メタコードが0で始まる場合には、コアコードは存在しない。したがって、メタコード3桁だけとなる。
 
-<table border="1" style="border-collapse: collapse">
+<table border="1" class="table-page" style="border-collapse: collapse">
   <thead>
     <tr>
       <th>メタコード1桁目</th>
@@ -177,7 +180,7 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 ###  CodeSystem
 
 
-<table border="1" style="border-collapse: collapse">
+<table class="table-page" border="1" style="border-collapse: collapse">
   <thead>
     <tr>
       <th>領域</th>
@@ -213,10 +216,20 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 
 ###  対応するValueSet
 
-| ValueSet名称 | ValueSet URL |
-|----|----|
-| JP_AllergyIntolerance_VS |[http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS](http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS)|
-
+<table class="table-page" border="1" style="border-collapse: collapse">
+  <thead>
+    <tr>
+      <th>ValueSet名称</th>
+      <th>ValueSet URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JP_AllergyIntolerance_VS</td>
+      <td><a href="http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS">http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <br>含まれるCodeSystem:   
 
