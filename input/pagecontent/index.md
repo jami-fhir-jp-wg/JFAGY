@@ -124,15 +124,44 @@ JFAGYコードは、メタコードと呼ばれる3文字コード列と、そ�
 ###  コアコード
 コアコードは、メタコードに続く7から12桁のコードで、個別のアレルゲンを識別する。ただし、メタコードが0で始まる場合には、コアコードは存在しない。したがって、メタコード3桁だけとなる。
 
-|メタコード1桁目| コアコード名称　|
-|----|----|
-|J| JFAYコード（食品、非食品・非医薬品） |
-|Y| 個別医薬品コード（YJ） |
-|P| 厚生労働省一般処方マスターのコード |
-|G| YJ派生コード（注1） |
-|A| WHO-ATC分類コード|
-|D| ダミーコード（注2） |
-|0（ゼロ）| コアコードなし |
+<table border="1" style="border-collapse: collapse">
+  <thead>
+    <tr>
+      <th>メタコード1桁目</th>
+      <th>コアコード名称　</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>J</td>
+      <td>JFAYコード（食品、非食品・非医薬品）</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>個別医薬品コード（YJ）</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>厚生労働省一般処方マスターのコード</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>YJ派生コード（注1）</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>WHO-ATC分類コード</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>ダミーコード（注2）</td>
+    </tr>
+    <tr>
+      <td>0（ゼロ）</td>
+      <td>コアコードなし</td>
+    </tr>
+  </tbody>
+</table>
 
   - 注1： YJ派生コードとは、個別医薬品コード（YJ）12桁のうち末尾の3桁を"ZZZ"に置き換えたコード。末尾3桁は通常、同一規格内での順序番号とチェックデジットを表している部分であり、同一規格で複数社から供給されているケースを区別するために使用されていることが多い。これをZZZで置き換えることで、複数社の区別をしない（できない）医薬品コードで表現したい場合に使用できる。<br>
   厚生労働省電子カルテ情報共有サービスにおいて導入された独自コード体系であり、チェックデジットの機能が使用できなくなっていることに留意が必要である。
@@ -147,11 +176,33 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 
 ###  CodeSystem
 
-|領域| CodeSystem名称 | CodeSystem URL　|
-|----|----|----|
-|食品|JP_JfagyFoodAllergen_CS|[http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS](http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS)|
-|非食品・非医薬品|JP_JfagyNonFoodNonMedicationAllergen_CS|[http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS](http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS)|
-|医薬品|JP_JfagyMedicationAllergen_CS|[http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS](http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS)|
+
+<table border="1" style="border-collapse: collapse">
+  <thead>
+    <tr>
+      <th>領域</th>
+      <th>CodeSystem名称</th>
+      <th>CodeSystem URL　</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>食品</td>
+      <td>JP_JfagyFoodAllergen_CS</td>
+      <td><a href="http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS</a></td>
+    </tr>
+    <tr>
+      <td>非食品・非医薬品</td>
+      <td>JP_JfagyNonFoodNonMedicationAllergen_CS</td>
+      <td><a href="http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS</a></td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>JP_JfagyMedicationAllergen_CS</td>
+      <td><a href="http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS</a></td>
+    </tr>
+  </tbody>
+</table>
 
   - 食品（JP_JfagyFoodAllergen_CS）CodeSystemには、すべてのJFAGY食品コード("00F"を含む)、および食品ダミーコード("D9F000000000")が含まれ、コードにはメタコード3桁が含まれる。
   - 非食品・非医薬品（JP_JfagyNonFoodNonMedicationAllergen_CS）CodeSystemには、すべてのJFAGY非食品・非医薬品コード("00N"を含む)、および非食品・非医薬品ダミーコード("D9N000000000")が含まれ、コードにはメタコード3桁を含まれる。
