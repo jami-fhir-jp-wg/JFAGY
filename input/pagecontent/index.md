@@ -77,15 +77,15 @@ table th {
 </style>
 
 
-###  J-FAGYアレルゲンコード
+#  J-FAGYアレルゲンコード
 
 アレルギー原因物質のコード表JFAGYは、「食品」、「非医薬品・食品」のカテゴリーに分けて、アレルゲンのコードを定義したコード表です。<br>
 また、「医薬品」については、個別医薬品コード（通称YJコード）、[一般処方マスター（一般厚生労働省保険局）](https://www.mhlw.go.jp/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shohosen_200401.html)、YJコード派生コード（注1）、[WHO-ATCコード](https://www.who.int/tools/atc-ddd-toolkit/atc-classification) のいずれかを使用して表現できるようになっています。
 
-###  JFAGYアレルゲンコードの概要
+#  JFAGYアレルゲンコードの概要
 JFAGYコードは、メタコードと呼ばれる3文字コード列と、それに続く文字コード列の結合した文字コード（コアコード）により表現される。
 
-####  メターコード
+##  メターコード
 メタコード3桁は、次のような意味をもって構成されており、後続のコアコードのコード体系、その文字数、アレルゲン領域区分からなる。
 
   - 1桁目：コアコードのコード体系識別文字。J=JFAGYコード、Y=個別医薬品コード（YJ）、P=厚生労働省一般処方マスターのコード、G=YJ派生コード（注1）、A=WHO-ATC分類コード（7桁コード）、D=ダミーコード（注2）、0（ゼロ）=コアコードなし。
@@ -108,7 +108,7 @@ JFAGYコードは、メタコードと呼ばれる3文字コード列と、そ�
 |0（ゼロ）|0（ゼロ）|F| 000 | コアコードなし、食品アレルゲン |
 |0（ゼロ）|0（ゼロ）|N| 000 | コアコードなし、非食品・非医薬品アレルゲン |
 
-####  コアコード
+##  コアコード
 コアコードは、メタコードに続く7から12桁のコードで、個別のアレルゲンを識別する。ただし、メタコードが0で始まる場合には、コアコードは存在しない。したがって、メタコード3桁だけとなる。
 
 |メタコード1桁目| コアコード名称　|
@@ -129,10 +129,10 @@ JFAGYコードは、メタコードと呼ばれる3文字コード列と、そ�
 
 <br>
 
-###  領域別のFHIR CodeSystemとValueSet
+##  領域別のFHIR CodeSystemとValueSet
 FHIR規格でJFAGYコードおよびその体系を使用するために次のCodeSystemとValueSetを定義している。
 
-####  CodeSystem
+##  CodeSystem
 
 |領域| CodeSystem名称 | CodeSystem URL　|
 |----|----|----|
@@ -147,7 +147,7 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
   "00M"コードが含まれる。<br>
   なお、現時点では、厚生労働省一般処方マスターのコード、WHOーATC分類コードは、厚生労働省電子カルテ情報共有サービスで使用しないため含まれない。
 
-####  対応するValueSet
+##  対応するValueSet
 
 | ValueSet名称 | ValueSet URL |
 |----|----|
@@ -160,19 +160,19 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
   - JP_JfagyMedicationAllergen_CS
   - JP_JfagyNonFoodNonMedicationAllergen_CS
 
-###  コード表入手先・ダウンロード先
+#  コード表入手先・ダウンロード先
 ここに収載のコード表は、それぞれ著作権、使用範囲の制限があるものがありますので、各ページ記載情報に留意してください。
 
-####  CSV、エクセル形式
+##  CSV、エクセル形式
   - [JFAGYコード表（エクセル）](https://jpfhir.jp/fhir/core/terminology/JFAGY/JFAGY_20240709V2.xlsx) （医薬品領域を除く）[Copyright CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.ja#s3)
   - [個別医薬品コード表](http://www.capstandard.jp/)
   - [厚生労働省一般処方マスター](https://www.mhlw.go.jp/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shohosen_200401.html)
 
-####  FHIR CodeSystem JSON形式
+##  FHIR CodeSystem JSON形式
 
   - 準備中
 
-####  FHIR CodeSystem FSH形式
+##  FHIR CodeSystem FSH形式
 
   - 準備中
 
