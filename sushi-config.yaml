@@ -8,7 +8,6 @@ canonical: http://jpfhir.jp/fhir/core/terminology/JFAGY
 name: JFAGY
 title: "J-FAGYアレルゲンコード"
 description: "J-FAGYアレルゲンコード"
-
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: active # draft | active | retired | unknown
