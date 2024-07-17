@@ -241,7 +241,7 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 ここに収載のコード表は、それぞれ著作権、使用範囲の制限があるものがありますので、各ページ記載情報に留意してください。
 
 ###  CSV、エクセル形式
-  - [JFAGYコード表（エクセル）](https://jpfhir.jp/fhir/core/terminology/JFAGY/JFAGY_20240709V2.xlsx) （医薬品領域を除く）[Copyright CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.ja#s3)
+  - [JFAGYコード表（エクセル）](https://jpfhir.jp/fhir/core/terminology/JFAGY/excel_files/JFAGY_20240709V2.xlsx) （医薬品領域を除く）[Copyright CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.ja#s3)
   - [個別医薬品コード表](http://www.capstandard.jp/)
   - [厚生労働省一般処方マスター](https://www.mhlw.go.jp/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shohosen_200401.html)
 
