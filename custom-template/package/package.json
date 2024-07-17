@@ -1,10 +1,10 @@
 {
-    "name": "jpfhir.JFAGY.ig-template",
+    "name": "ePrescriptionData.ig-template",
     "type": "fhir.template",
     "license": "CC0-1.0",
-    "description": "JFAGY IG Template",
+    "description": "jp.fhir.ePrescriptionData IG Template",
     "author": "https://jpfhir.jp",
-    "canonical": "https://jpfhir.jp/fhir/core/terminology/JFAGY/templates/jpfhir.g-template",
+    "canonical": "https://jpfhir.jp/fhir/ePrescriptionData/templates/ePrescriptionData.ig-template",
     "base": "fhir.base.template",
     "dependencies": {
         "fhir.base.template": "current"

@@ -45,74 +45,44 @@ var(--publish-box-border); */
 
 :root {
 
-  --ig-status-text-color: maroon;
-  /* 1. IG Title and status text color */
-  --navbar-bg-color: #7b1fad;
-  /* 2. Header container color */
-  --footer-bg-color: #707070;
-  /* 3. Footer background color*/
-  --footer-container-bg-color: #7b1fad;
-  /* 4. Footer container color */
-  --stripe-bg-color: #999999;
-  /* 5. Header strip color */
+  --ig-status-text-color: maroon; /* 1. IG Title and status text color */
+  --navbar-bg-color: #7b1fad; /* 2. Header container color */
+  --footer-bg-color: #707070; /* 3. Footer background color*/
+  --footer-container-bg-color: #7b1fad; /* 4. Footer container color */
+  --stripe-bg-color: #999999; /* 5. Header strip color */
 
-  --btn-hover-color: #9b2fdd;
-  /* 6. Menu button hover color */
-  --btn-active-color: #da0c23;
-  /* 7. Menu button active color */
-  --btn-text-color: #e6e6e6;
-  /* 8. Menu button text color */
-  --btn-gradient-start-color: #428bca;
-  /* 9. Menu item gradient start color */
-  --btn-gradient-end-color: #357ebd;
-  /* 10. Menu item gradient end  color */
-  --btn-gradient-start-color-alpha: #ff428bca;
-  /* 11. Menu item gradient start color (with alpha) */
-  --btn-gradient-end-color-alpha: #ff357ebd;
-  /* 12. Menu item gradient end color (with alpha) */
-  --link-color: #428bca;
-  /* 13. Hyperlink text color */
-  --link-hover-color: #2a6496;
-  /* 14. Hyperlink text hover color */
+  --btn-hover-color: #9b2fdd;  /* 6. Menu button hover color */
+  --btn-active-color: #da0c23; /* 7. Menu button active color */
+  --btn-text-color: #e6e6e6; /* 8. Menu button text color */
+  --btn-gradient-start-color: #428bca; /* 9. Menu item gradient start color */
+  --btn-gradient-end-color: #357ebd; /* 10. Menu item gradient end  color */
+  --btn-gradient-start-color-alpha: #ff428bca; /* 11. Menu item gradient start color (with alpha) */
+  --btn-gradient-end-color-alpha: #ff357ebd; /* 12. Menu item gradient end color (with alpha) */
+  --link-color: #428bca; /* 13. Hyperlink text color */
+  --link-hover-color: #2a6496; /* 14. Hyperlink text hover color */
 
-  --publish-box-bg-color: yellow;
-  /* 15. Publish box background color */
-  --publish-box-border: 1px solid #0A0008;
-  /* 16.  Publish box border definition */
+  --publish-box-bg-color: yellow; /* 15. Publish box background color */
+  --publish-box-border: 1px solid #0A0008; /* 16.  Publish box border definition */
 
-  --toc-box-bg-color: #ffeb7e;
-  /* 17.  TOC box background color */
-  --toc-box-border: 1px solid navy;
-  /* 18. TOC box border definition */
+  --toc-box-bg-color: #ffeb7e; /* 17.  TOC box background color */
+  --toc-box-border: 1px solid navy; /* 18. TOC box border definition */
 
-  --stu-note-background-color: #fff2ff;
-  /* 19. (STU) Note box background color */
-  --stu-note-border-left-color: #ffa0ff;
-  /* 20. (STU) Note box border color */
+  --stu-note-background-color: #fff2ff; /* 19. (STU) Note box background color */
+  --stu-note-border-left-color: #ffa0ff; /* 20. (STU) Note box border color */
 
-  --ig-header-color: #f5f5f5;
-  /* 21. Header color (sides) */
-  --ig-header-container-color: #ffffff;
-  /* 22. Header container color (center) */
-  --footer-nav-bg-color: #f5f5f5;
-  /* 23. Footer navigation background color*/
+  --ig-header-color: #f5f5f5; /* 21. Header color (sides) */
+  --ig-header-container-color: #ffffff; /* 22. Header container color (center) */
+  --footer-nav-bg-color: #f5f5f5; /* 23. Footer navigation background color*/
 
-  --footer-text-color: #ffffff;
-  /* 24. Footer highlight font color */
-  --footer-hyperlink-text-color: #81BEF7;
-  /* 25. Footer hyperlinks font color */
-  --footer-highlight-text-color: #ffff77;
-  /* 26. Footer highlight font color */
+  --footer-text-color: #ffffff; /* 24. Footer highlight font color */
+  --footer-hyperlink-text-color: #81BEF7; /* 25. Footer hyperlinks font color */
+  --footer-highlight-text-color: #ffff77; /* 26. Footer highlight font color */
 
-  --breadcrumb-bg-color: #f5f5f5;
-  /* 27. Breadcrumb font color */
-  --breadcrumb-text-color: ##555555;
-  /* 28. Breadcrumb font color */
+  --breadcrumb-bg-color: #f5f5f5; /* 27. Breadcrumb font color */
+  --breadcrumb-text-color: ##555555; /* 28. Breadcrumb font color */
 
-  --dragon-background-color: #fffbf7;
-  /* 29. Dragon background color */
-  --dragon-text-color: #101020;
-  /* 30. Dragon font color */
+  --dragon-background-color: #fffbf7; /* 29. Dragon background color */
+  --dragon-text-color: #101020; /* 30. Dragon font color */
 
 }
 
@@ -121,67 +91,53 @@ var(--publish-box-border); */
 html {
   background-color: #ffffff;
 }
-
 body {
-  counter-reset: section;
   background-color: #ffffff;
   position: relative;
   padding-top: 0;
 }
-
 .segment {
   position: relative;
 }
-
-.segment>.container {
+.segment > .container {
   background-color: #ffffff;
   position: relative;
 }
-
 #segment-header {
   background-color: var(--ig-header-color);
 }
-
-#segment-header>.container {
+#segment-header > .container {
   background-color: var(--ig-header-container-color);
 }
-
 #segment-footer {
   background-color: var(--footer-bg-color);
 }
 
-#segment-footer>.container {
+#segment-footer > .container {
   background-color: var(--footer-container-bg-color);
   color: var(--footer-text-color);
 }
-
 .navbar-inverse {
   background-color: var(--navbar-bg-color);
 }
-
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav > li > a:hover {
   background-color: var(--btn-hover-color);
 }
-
-#segment-footer>.container .inner-wrapper {
+#segment-footer > .container .inner-wrapper {
   padding: 4px 20px;
 }
-
-#segment-footer>.container .inner-wrapper>p {
+#segment-footer > .container .inner-wrapper > p {
   padding-bottom: 0px;
   margin-bottom: 0px;
-  color: var(--footer-text-color);
+  color:var(--footer-text-color);
 }
-
 #segment-post-footer {
   background-color: #f5f5f5;
 }
-
-#segment-post-footer>.container {
+#segment-post-footer > .container {
   background-color: #e6e6e6;
   min-height: 90px;
 }
-
 /*
 @media (max-width: 767px) {
 	body {
@@ -202,17 +158,15 @@ body {
 	}
 }
 */
-#sidebar>.inner-wrapper {
+#sidebar > .inner-wrapper {
   margin-top: 14px;
   margin-bottom: 20px;
 }
-
-#content>.inner-wrapper,
-.container>.row>.inner-wrapper {
+#content > .inner-wrapper,
+.container > .row > .inner-wrapper {
   margin-top: 4px;
   margin-bottom: 20px;
 }
-
 /* SCAFFOlDING OBJECTS
 ----------------------------------------------------------------------------------------*/
 #logo {
@@ -222,7 +176,6 @@ body {
   margin-bottom: 4px;
   display: block;
 }
-
 #logo img {
   max-width: 100%;
 }
@@ -234,18 +187,17 @@ body {
   margin-bottom: 8px;
   color: #808080;
 }
-
 #project-logo {
   float: left;
   margin-left: 3px;
 }
 
 #family-nav {
-  line-height: 50px;
-  float: right;
-  margin-top: 4px;
-  margin-bottom: 8px;
-  color: #808080;
+    line-height: 50px;
+    float: right;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    color: #808080;
 }
 
 #family-logo {
@@ -269,11 +221,9 @@ body {
   height: 8px;
   background: var(--stripe-bg-color);
 }
-
 #notes a {
   color: #555555;
 }
-
 #publish-box {
   background-color: var(--publish-box-bg-color);
   border: var(--publish-box-border);
@@ -293,19 +243,18 @@ body {
   background-image: url('../images/dragon.png');
   background-size: 150px 150px;
   display: inline-block;
-  float: left;
+  float:left;
   margin-right: 10px;
   width: 150px;
   height: 150px;
 }
 
-.note-to-balloters,
-.stu-note {
-  margin: 5px;
-  padding: 10px;
-  border-left-style: solid;
-  background-color: var(--stu-note-background-color);
-  border-left-color: var(--stu-note-border-left-color);
+.note-to-balloters, .stu-note {
+    margin: 5px;
+    padding: 10px;
+    border-left-style: solid;
+    background-color: var(--stu-note-background-color);
+    border-left-color: var(--stu-note-border-left-color);
 }
 
 .stu-note::before {
@@ -325,10 +274,10 @@ body {
 }
 
 blockquote.stu-note {
-  margin: 5px;
-  padding: 10px;
-  background-color: var(--stu-note-background-color);
-  border-left-color: var(--stu-note-border-left-color);
+	margin: 5px;
+	padding:10px;
+    background-color: var(--stu-note-background-color);
+    border-left-color: var(--stu-note-border-left-color);
 }
 
 
@@ -347,44 +296,40 @@ blockquote.stu-note {
   padding-left: 0px;
   padding-right: 0px;
   margin-bottom: 0;
-  /*  background-color: var(--navbar-bg-color); */
+/*  background-color: var(--navbar-bg-color); */
 
 }
-
-.navbar>div>div>ul>li {
+.navbar > div > div > ul > li {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
-.navbar .nav>li>a {
+.navbar .nav > li > a {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar .nav > li > a {
   padding: 10px 12px;
   text-shadow: none;
 }
-
-.navbar .nav>li>a,
-.navbar .nav>.active>a,
-.navbar .nav>.active>a:hover,
-.navbar .nav>.active>a:focus {
+.navbar .nav > li > a,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
 .dropdown-menu {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-
-.dropdown-menu li>a {
+.dropdown-menu li > a {
   padding: 6px 20px;
 }
-
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus,
-.dropdown-submenu:hover>a,
-.dropdown-submenu:focus>a {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
   text-decoration: none;
   color: #ffffff;
   background-color: var(--btn-hover-color);
@@ -395,10 +340,9 @@ blockquote.stu-note {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--btn-gradient-start-color-alpha), endColorstr=var(--btn-gradient-end-color-alpha), GradientType=0);
 }
-
-.dropdown-menu>.active>a,
-.dropdown-menu>.active>a:hover,
-.dropdown-menu>.active>a:focus {
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
@@ -410,12 +354,9 @@ blockquote.stu-note {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--btn-gradient-start-color-alpha), endColorstr=var(--btn-gradient-end-color-alpha), GradientType=0);
 }
-
 .nav-tabs {
   margin-bottom: 20px;
-  border-bottom-color: #955159;
 }
-
 .nav-tabs a {
   color: #555555;
 }
@@ -424,17 +365,20 @@ blockquote.stu-note {
 .nav-tabs li a:focus {
   border-bottom-color: #955159;
 }
+.nav-tabs {
+  border-bottom-color: #955159;
+}
 
-.nav-tabs>.active>a,
-.nav-tabs>.active>a:hover,
-.nav-tabs>.active>a:focus {
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
   color: var(--btn-active-color);
   border-color: #955159 #955159 transparent;
 }
 
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:hover,
-.nav-tabs>li.active>a:focus {
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
   color: var(--btn-active-color);
   background-color: #ffffff;
   border: 1px solid #955159;
@@ -442,19 +386,19 @@ blockquote.stu-note {
   cursor: default;
 }
 
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a:focus {
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
   background-color: var(--btn-active-color);
   color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-  color: var(--btn-text-color);
+.navbar-inverse .navbar-nav > li > a {
+  color:  var(--btn-text-color);
 }
 
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
   background-color: var(--btn-hover-color);
 }
@@ -499,7 +443,7 @@ blockquote.stu-note {
 
 
 a {
-  color: var(--link-color);
+  color:  var(--link-color);
   text-decoration: none;
 }
 
@@ -517,42 +461,34 @@ a:focus {
 }
 
 
-.nav-list>li>a {
+.nav-list > li > a {
   padding: 3px 15px;
 }
-
 .breadcrumb {
   margin-bottom: 0;
-  background-color: var(--breadcrumb-bg-color);
+  background-color: var(--breadcrumb-bg-color);;
 }
-
 .breadcrumb a {
   color: var(--breadcrumb-text-color);
 }
-
 .nav-listing {
   overflow: hidden;
 }
-
-.nav-listing>li {
+.nav-listing > li {
   float: left;
   width: 25%;
 }
-
-.nav-listing>li>a {
+.nav-listing > li > a {
   padding: 2px 6px;
 }
-
 .sectioncount {
   x-float: right;
-  x-color: #000b6c;
+  x-color: #555555;
   x-font-size: 12px;
 }
-
 .sectioncount a {
   color: inherit;
 }
-
 h1.underlined,
 h2.underlined,
 h3.underlined,
@@ -562,20 +498,17 @@ h6.underlined {
   border-bottom: 1px solid #dddddd;
   padding-bottom: 0.2em;
 }
-
-p>img {
+p > img {
   float: left;
   margin-top: 0;
   margin-right: 10px;
   margin-bottom: 10px;
   margin-left: 0;
 }
-
 .table td {
   padding: 6px;
   line-height: 18px;
 }
-
 .table th h1,
 .table th h2,
 .table th h3,
@@ -584,13 +517,11 @@ p>img {
 .table th h6 {
   margin-bottom: 0;
 }
-
 .table th.inverted {
   background-color: #555555;
   color: #ffffff;
-  border: none !important;
+  border: none!important;
 }
-
 .table th.inverted h1,
 .table th.inverted h2,
 .table th.inverted h3,
@@ -599,18 +530,15 @@ p>img {
 .table th.inverted h6 {
   color: inherit;
 }
-
 pre {
   font-size: 12px;
 }
-
 .icon-warning-sign {
   font-size: 30px;
   margin-right: 10px;
   display: block;
   float: left;
 }
-
 /* BACK TO TOP
 ----------------------------------------------------------------------------------------*/
 a.to-top {
@@ -622,155 +550,105 @@ a.to-top {
   text-indent: -9999px;
   margin-top: -28px;
 }
-
 /* EXCEPTIONS FOR SPECIFIC SITUATIONS
 ----------------------------------------------------------------------------------------*/
 /* D-I-D AREA
 ----------------------------------------------------------------------------------------*/
 
-ul.markdown-toc {
+ul.markdown-toc
+{
   margin: 4px;
   padding: 4px;
   float: right;
   z-index: 10;
   width: 30%;
-  background-color: var(--toc-box-bg-color);
+  background-color:  var(--toc-box-bg-color);
   border: var(--toc-box-border);
 }
 
-ul.markdown-toc p {
+ul.markdown-toc p
+{
   font-size: 10px;
   font-weight: bold;
   margin: 5px;
   padding: 0px;
 }
 
-ul.markdown-toc p.link {
+ul.markdown-toc p.link
+{
   font-size: 10px;
   padding-left: 8px;
   margin: 0px;
 }
 
-div.markdown-toc {
+div.markdown-toc
+{
   margin: 4px;
   padding: 4px;
   float: right;
   z-index: 10;
   width: 30%;
-  background-color: var(--toc-box-bg-color);
+  background-color:  var(--toc-box-bg-color);
   border: var(--toc-box-border);
 }
 
-div.markdown-toc p {
+div.markdown-toc p
+{
   font-size: 10px;
   font-weight: bold;
   margin: 5px;
   padding: 0px;
 }
 
-div.markdown-toc p.link {
+div.markdown-toc p.link
+{
   font-size: 10px;
   padding-left: 8px;
   margin: 0px;
 }
 
 /* Fix to avoid truncating letter descenders in headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.title {
-  overflow: visible;
-  margin: 1em 0 0.4em 0;
+h1, h2, h3, h4, h5, h6, .title {
+overflow: visible;
 }
 
+h1 {
+  padding: 0.4em 0.5em;
+  /*文字の上下 左右の余白*/
+  color: #494949;
+  /*文字色*/
+  background: #f4f4f4;
+  /*背景色*/
+  border-left: solid 5px #7db4e6;
+  /*左線*/
+  border-bottom: solid 3px #d7d7d7;
+  /*下線*/
+  font-size: 120%;
+}
 
+/* Common content for section numbering */
+body{counter-reset:section}
 
-h2 {
-  counter-reset: sub-section;
+h2{counter-reset:sub-section;
   position: relative;
   padding: 0.5em;
   background: #7db4e6;
   color: black;
   font-size: 120%;
 }
-
-h3 {
-  counter-reset: composite;
-  padding: 0.4em 0.5em;
-  /*文字の上下 左右の余白*/
-  color: #000000;
-  /*文字色*/
-  background: #b2f1ed;
-  /*背景色*/
-  border-left: solid 5px #7db4e6;
-  /*左線*/
-  border-bottom: solid 3px #d7d7d7;
-  /*下線*/
-  font-size: 110%;
-}
-
-h4 {
-  counter-reset: detail;
-  padding: 0.4em 0.5em;
-  /*文字の上下 左右の余白*/
-  color: #000000;
-  /*文字色*/
-  background: #f4f4f4;
-  /*背景色*/
-  border-left: solid 5px #7db4e6;
-  /*左線*/
-  border-bottom: solid 3px #090909;
-  /*下線*/
-  font-size: 105%;
-}
-
-h5 {
-  counter-reset: more-detail
-}
-
-h2:before {
-  color: black;
-  counter-increment: section;
-  content: counter(section) " ";
-}
-
-h3:before {
-  color: black;
-  counter-increment: sub-section;
-  content: counter(section) "." counter(sub-section) " ";
-}
-
-h4:before {
-  color: black;
-  counter-increment: composite;
-  content: counter(section) "." counter(sub-section) "." counter(composite) " ";
-}
-
-h5:before {
-  color: black;
-  counter-increment: detail;
-  content: counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
-}
-
-h6:before {
-  color: black;
-  counter-increment: more-detail;
-  content: counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";
-}
+h3{counter-reset:composite}
+h4{counter-reset:detail}
+h5{counter-reset:more-detail}
+h2:before{color:black;content:" ";}
+h2:before{color:black;counter-increment:section;content:counter(section) " ";}
+h3:before{color:black;counter-increment:sub-section;content:counter(section) "." counter(sub-section) " ";}
+h4:before{color:black;counter-increment:composite;content:counter(section) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:black;counter-increment:detail;content:counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:black;counter-increment:more-detail;content:counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 
 /* ============ downloads css ============= */
 
-a[href$=".sch"]:after,
-a[href$=".xlsx"]:after,
-a[href$=".zip"]:after,
-a[href$=".tgz"]:after,
-a[href$=".xml"]:not([no-download^="true"]):after,
-a[href$=".json"]:not([no-download^="true"]):after,
-a[href$=".csv"]:after,
-a[href$=".ttl"]:not([no-download^="true"]):after {
+a[href$=".sch"]:after, a[href$=".xlsx"]:after, a[href$=".zip"]:after, a[href$=".tgz"]:after, a[href$=".xml"]:not([no-download^="true"]):after, a[href$=".json"]:not([no-download^="true"]):after, a[href$=".csv"]:after, a[href$=".ttl"]:not([no-download^="true"]):after {
   content: url(../images/download.png);
   display: inline-block;
   text-decoration: none;
@@ -778,20 +656,18 @@ a[href$=".ttl"]:not([no-download^="true"]):after {
 }
 
 /* =========== external links ============= */
-p a[href^="http://"]:not([no-external^="true"]):after,
-p a[href^="https://"]:not([no-external^="true"]):after {
-  content: url(../images/external.png);
-  display: inline-block;
-  text-decoration: none;
-  padding-left: 3px;
+p a[href^="http://"]:not([no-external^="true"]):after,p a[href^="https://"]:not([no-external^="true"]):after {
+    content: url(../images/external.png);
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 3px;
 }
 
-li a[href^="http://"]:not([no-external^="true"]):after,
-li a[href^="https://"]:not([no-external^="true"]):after {
-  content: url(../images/external.png);
-  display: inline-block;
-  text-decoration: none;
-  padding-left: 3px;
+li a[href^="http://"]:not([no-external^="true"]):after,li a[href^="https://"]:not([no-external^="true"]):after {
+    content: url(../images/external.png);
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 3px;
 }
 
 /* ----------New content for ballot styling------*/
@@ -800,61 +676,43 @@ li a[href^="https://"]:not([no-external^="true"]):after {
   white-space: pre;
   content: "New Content\A ";
   color: red;
-  font-weight: bold;
+  font-weight: bold;}
+.new-content{
+    margin: 5px;
+    padding: 10px;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
 }
 
-.new-content {
-  margin: 5px;
-  padding: 10px;
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
+.bg-success{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #bce8f1;
 }
 
-.modified-content::before {
-  white-space: pre;
-  content: "Modified Content\A ";
-  color: red;
-  font-weight: bold;
+.bg-info{
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #d6e9c6;
 }
 
-.modified-content {
-  margin: 5px;
-  padding: 10px;
-  color: #784212;
-  background-color: #fef9e7;
-  border-color: #f9e79f;
+.bg-warning{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
 }
 
-
-.bg-success {
-  color: #3c763d;
-  background-color: #dff0d8;
-  border-color: #bce8f1;
-}
-
-.bg-info {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #d6e9c6;
-}
-
-.bg-warning {
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-}
-
-.bg-danger {
-  color: #a94442;
-  background-color: #f2dede;
-  border-color: #ebccd1;
+.bg-danger{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
 }
 
 
 .feedback {
   color: #e0e0e0;
-  padding: 1px;
+  padding:1px ;
   font-size: 80%;
   background-size: 17px 17px;
   background-position: left center;
@@ -862,25 +720,22 @@ li a[href^="https://"]:not([no-external^="true"]):after {
   margin-left: 7px;
   padding-left: 7px;
   padding-right: 7px;
-  float: right;
-  /* none or right */
+  float: right ; /* none or right */
   border-radius: 6px;
   border: 0.5px solid #ffffff;
 }
 
-.feedback:hover {
+.feedback:hover  {
   color: #101010;
   border: 0.5px solid #777;
   background-color: #f7f7f7;
 }
 
-.feedback:after {
-  /* 'feedback:before' or after for icon before or after text  */
-  content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY0IDY0IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyB0cmFuc2Zvcm09Im1hdHJpeCguMzE4NzIgMCAwIC4zMTg3MiAtMi4xNDYxIC0yLjE3NTcpIiBmaWxsPSIjODgyMjIyIj48cGF0aCBkPSJtNTUuNzM2IDEzLjYzNi00LjM2OC00LjM2MmMtMC40NTEtMC40NTEtMS4wNDQtMC42NzctMS42MzYtMC42NzdzLTEuMTg0IDAuMjI1LTEuNjM1IDAuNjc2bC0zLjQ5NCAzLjQ4NCA3LjYzOSA3LjYyNiAzLjQ5NC0zLjQ4M2MwLjkwMy0wLjkwMiAwLjkwMy0yLjM2NSAwLTMuMjY0eiIvPjxwb2x5Z29uIHBvaW50cz0iMjEuOTIyIDM1LjM5NiAyOS41NjIgNDMuMDIzIDUwLjYwNyAyMi4wMTcgNDIuOTY3IDE0LjM5Ii8+PHBvbHlnb24gcG9pbnRzPSIyNy45MTMgNDQuNjU0IDIwLjI3MyAzNy4wMjggMTguNjQyIDQ2LjI4Ii8+PHBhdGggZD0ibTQxLjM5MyA1MC40MDNoLTI4LjgwNnYtMjguODA2aDIwLjMyOWw1LjAxLTVoLTI3LjEwNmMtMS43NzkgMC0zLjIzNCAxLjQ1NS0zLjIzNCAzLjIzNHYzMi4zMzljMCAxLjc3OSAxLjQ1NSAzLjIzNCAzLjIzNCAzLjIzNGgzMi4zMzljMS43NzkgMCAzLjIzNC0xLjQ1NSAzLjIzNC0zLjIzNHYtMjMuMTIxbC01IDQuOTkxeiIvPjwvZz48L3N2Zz4K') !important;
+.feedback:after {  /* 'feedback:before' or after for icon before or after text  */
+  content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDY0IDY0IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyB0cmFuc2Zvcm09Im1hdHJpeCguMzE4NzIgMCAwIC4zMTg3MiAtMi4xNDYxIC0yLjE3NTcpIiBmaWxsPSIjODgyMjIyIj48cGF0aCBkPSJtNTUuNzM2IDEzLjYzNi00LjM2OC00LjM2MmMtMC40NTEtMC40NTEtMS4wNDQtMC42NzctMS42MzYtMC42NzdzLTEuMTg0IDAuMjI1LTEuNjM1IDAuNjc2bC0zLjQ5NCAzLjQ4NCA3LjYzOSA3LjYyNiAzLjQ5NC0zLjQ4M2MwLjkwMy0wLjkwMiAwLjkwMy0yLjM2NSAwLTMuMjY0eiIvPjxwb2x5Z29uIHBvaW50cz0iMjEuOTIyIDM1LjM5NiAyOS41NjIgNDMuMDIzIDUwLjYwNyAyMi4wMTcgNDIuOTY3IDE0LjM5Ii8+PHBvbHlnb24gcG9pbnRzPSIyNy45MTMgNDQuNjU0IDIwLjI3MyAzNy4wMjggMTguNjQyIDQ2LjI4Ii8+PHBhdGggZD0ibTQxLjM5MyA1MC40MDNoLTI4LjgwNnYtMjguODA2aDIwLjMyOWw1LjAxLTVoLTI3LjEwNmMtMS43NzkgMC0zLjIzNCAxLjQ1NS0zLjIzNCAzLjIzNHYzMi4zMzljMCAxLjc3OSAxLjQ1NSAzLjIzNCAzLjIzNCAzLjIzNGgzMi4zMzljMS43NzkgMCAzLjIzNC0xLjQ1NSAzLjIzNC0zLjIzNHYtMjMuMTIxbC01IDQuOTkxeiIvPjwvZz48L3N2Zz4K')!important;
 }
 
-.feedback:before {
-  /* 'feedback:before' or after for icon before or after text  */
+.feedback:before {  /* 'feedback:before' or after for icon before or after text  */
   content: none !important;
   padding-left: 3px;
   padding-right: 3px;
@@ -891,7 +746,7 @@ li a[href^="https://"]:not([no-external^="true"]):after {
   font-weight: bold;
 }
 
-.copy-text .btn-copy {
+.copy-text .btn-copy{
   visibility: hidden;
 }
 
@@ -904,42 +759,7 @@ li a[href^="https://"]:not([no-external^="true"]):after {
   width: 17px;
   background-image: url('../ico/noun_copy to clipboard_1669410.png');
   background-size: 22px;
-  padding: 0px 0px;
+  padding: 0px 0px; 
   border-width: 0px;
   background-color: transparent;
-}
-
-
-/* 用語集テーブル */
-table.extension_description tr td:nth-of-type(1) {
-  min-width: 100px;
-}
-
-table.extension_description tr td:nth-of-type(2) {
-  min-width: 200px;
-}
-
-table.extension_description tr td:nth-of-type(3) {
-  word-wrap: break-word;
-}
-
-pre.json {
-  display: block;
-  width: fit-content;
-}
-
-pre.xml {
-  display: block;
-  width: fit-content;
-}
-
-pre[class*="language-"] {
-  display: block;
-  width: fit-content;
-}
-
-
-code[class*="language-"] {
-  white-space: pre-wrap;
-  overflow-wrap:  break-word;
 }

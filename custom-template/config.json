@@ -1,16 +1,3 @@
 {
-  "includeHeadings": false,
-  "template-parameters": [
-    "copyrightyear",
-    "excludelogbinaryformat",
-    "excludejson",
-    "noRootToc",
-    "excludemap",
-    "excludettl",
-    "excludexml",
-    "fmm-definition",
-    "globals-in-artifacts",
-    "releaselabel",
-    "shownav"
-  ]
+  "includeHeadings" :  false
 }
