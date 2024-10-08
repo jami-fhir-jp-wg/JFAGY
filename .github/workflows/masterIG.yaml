@@ -16,10 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['3.0']
+        ruby-version: ['3.2.1']
     environment: SSH_PORT_JPFHIR  # JAMI WG アップロードサイトに関するアクセス情報の環境名
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
+    - name: Set up Ruby ${{ matrix.ruby-version }}
+      uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
+      with:
+        ruby-version: ${{ matrix.ruby-version }} 
 
     - name: Setup npm
       uses: actions/setup-node@v2
