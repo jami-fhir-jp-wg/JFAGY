@@ -22,8 +22,18 @@ def fillUrl(prefix, sb, extension = false)
             url = h["url"].to_s
             if url.start_with?("urn:") == false then                    
                 pathfilebase = File.basename(URI.parse(fl).path,".json")
-                if File.basename(URI.parse(url).path) != "" then
-                  urlfilebase = prefix + "-" + File.basename(URI.parse(url).path)
+                pathdir1 = File.dirname(URI.parse(url).path,level=1)  #最後のファイル名を除く手前までのパス
+                pathdir2 = File.dirname(URI.parse(url).path,level=2)  #最後のファイル名と直前のを除く手前までのパス
+                pathdir2filebase = File.basename(pathdir2)  #最後のファイル名と直前のを除く手前までのパスの最後のフォルダ名
+                pathdir1filebase = File.basename(pathdir1)  #最後のファイル名を除く手前までのパスの最後のフォルダ名
+                p "url="+url+" pathdir1="+pathdir1 + " pathdir2=" + pathdir2 + " pathdir1filebase="+pathdir1filebase+ " pathdir2filebase="+pathdir2filebase
+                if pathdir2filebase == "CodeSystem" || pathdir2filebase == "ValueSet" then
+                  fileID = pathdir1filebase + "-" + File.basename(URI.parse(url).path)
+                else
+                  fileID = File.basename(URI.parse(url).path)
+                end
+                if fileID != "" then
+                  urlfilebase = prefix + "-" + fileID
                   if pathfilebase != urlfilebase
                     sb << "ln -s " + pathfilebase + ".json.html " + urlfilebase + ".json.html" + "\n"
                     sb << "ln -s " + pathfilebase + ".html " + urlfilebase + ".html" + "\n"
