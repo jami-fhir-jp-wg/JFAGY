@@ -201,7 +201,7 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
     <tr>
       <td>医薬品(薬剤アレルギー用コード)</td>
       <td>JP_JfagyMedicationAllergenYCM_CS</td>
-      <td><a href="http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS</a></td>
+      <td><a href="https://jpfhir.jp/fhir/core/terminology/url/CodeSystem-jp-jfagymedicationallergenycm-cs.html">http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS</a></td>
     </tr>
     <tr>
       <td>医薬品(薬剤成分アレルギー用コード)</td>
