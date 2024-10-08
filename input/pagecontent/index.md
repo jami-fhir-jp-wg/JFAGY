@@ -6,7 +6,7 @@
 ###  J-FAGYアレルゲンコード
 
 アレルギー原因物質のコード表JFAGYは、「食品」、「非医薬品・食品」のカテゴリーに分けて、アレルゲンのコードを定義したコード表です。<br>
-また、「医薬品」については、個別医薬品コード（通称YJコード）、[一般処方マスター（一般厚生労働省保険局）](https://www.mhlw.go.jp/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shohosen_200401.html)、YJコード派生コード（注1）、[WHO-ATCコード](https://www.who.int/tools/atc-ddd-toolkit/atc-classification) のいずれかを使用して表現できるようになっています。
+また、「医薬品」については、個別医薬品コード（通称YJコード）、[一般処方マスター（一般厚生労働省保険局）](https://www.mhlw.go.jp/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shohosen_200401.html)、薬剤成分アレルギー用コード（注1）、[WHO-ATCコード](https://www.who.int/tools/atc-ddd-toolkit/atc-classification) のいずれかを使用して表現できるようになっています。
 
 ###  JFAGYアレルゲンコードの概要
 JFAGYコードは、メタコードと呼ばれる3文字コード列と、それに続く文字コード列の結合した文字コード（コアコード）により表現される。
@@ -14,7 +14,7 @@ JFAGYコードは、メタコードと呼ばれる3文字コード列と、そ�
 ####  メターコード
 メタコード3桁は、次のような意味をもって構成されており、後続のコアコードのコード体系、その文字数、アレルゲン領域区分からなる。
 
-  - 1桁目：コアコードのコード体系識別文字。J=JFAGYコード、Y=個別医薬品コード（YJ）、P=厚生労働省一般処方マスターのコード、G=YJ派生コード（注1）、A=WHO-ATC分類コード（7桁コード）、D=ダミーコード（注2）、0（ゼロ）=コアコードなし。
+  - 1桁目：コアコードのコード体系識別文字。J=JFAGYコード、Y=個別医薬品コード（YJ）、P=厚生労働省一般処方マスターのコード、G=薬剤成分アレルギー用コード（注1）、A=WHO-ATC分類コード（7桁コード）、D=ダミーコード（注2）、0（ゼロ）=コアコードなし。
   - 2桁目：コアコードの文字数を36進数で表した1文字（0〜9、A、B、C、D、…）。現在のバージョンでは、最大16桁（0〜F）としている。現在のバージョンでは、0、7、9、C(10進数の12)だけが使われる。
   - 3桁目：コアコードが対象とするアレルゲン領域区分識別コード。F=食品、M=医薬品、N=非食品・非医薬品、0=全領域（領域不明の特定できない一つ以上のアレルゲン）。
 
@@ -104,21 +104,21 @@ JFAGYコードは、メタコードと呼ばれる3文字コード列と、そ�
       <td>0（ゼロ）</td>
       <td>0（ゼロ）</td>
       <td>M</td>
-      <td>000</td>
+      <td>00M</td>
       <td>コアコードなし、医薬品アレルゲン。同上。</td>
     </tr>
     <tr>
       <td>0（ゼロ）</td>
       <td>0（ゼロ）</td>
       <td>F</td>
-      <td>000</td>
-      <td>コアコードなし、食品アレルゲンs。同上。</td>
+      <td>00F</td>
+      <td>コアコードなし、食品アレルゲン。同上。</td>
     </tr>
     <tr>
       <td>0（ゼロ）</td>
       <td>0（ゼロ）</td>
       <td>N</td>
-      <td>000</td>
+      <td>00N</td>
       <td>コアコードなし、非食品・非医薬品アレルゲン。同上。</td>
     </tr>
   </tbody>
@@ -166,8 +166,8 @@ JFAGYコードは、メタコードと呼ばれる3文字コード列と、そ�
   </tbody>
 </table>
 
-  - 注1： YJ派生コード（仮名称）とは、個別医薬品コード（YJ）12桁のうち末尾の3桁を"ZZZ"に置き換えたコード。末尾3桁は通常、同一規格内での順序番号とチェックデジットを表している部分であり、同一規格で複数社から供給されているケースを区別するために使用されていることが多い。これをZZZで置き換えることで、複数社の区別をしない（できない）医薬品コードで表現したい場合に使用できる。<br>
-  厚生労働省電子カルテ情報共有サービスにおいて導入された独自コード体系であり、チェックデジットの機能が使用できなくなっていることに留意が必要である。またこのコード名称と、それを利用したJFAGY医薬品アレルギーコードの名称と対応するsystem　URLは近々に決定される。
+  - 注1： 薬剤成分アレルギー用コードとは、個別医薬品コード（YJ）12桁のうち末尾の3桁を"ZZZ"に置き換え、製剤剤型や規格に関する違いを削除することにより成分名を一覧化した電子カルテ情報共有サービスで使用するために作成されたコード。医薬品の成分コードで表現したい場合に使用できる。<br>
+  system　URL: "http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS"
   - 注2： ダミーコードとは、特定のアレルゲンを記述したい場合であって、適切な表現コードが提供されているコード表のコードでは記述できないと判断された場合に使用するもので、"コード化不可コード"として使用する。<br>
   コアコードとして、"000000000"を使用する。
   <br>厚生労働省電子カルテ情報共有サービスにおいて導入された独自コード体系である。ダミーコードを使用した場合には、別の方法でアレルゲンを文字列表現する必要がある。FHIRのCodeableConceptデータタイプを使用する場合にはtext要素にアレルゲン名称をフリーテキストで記述することとする。
@@ -199,18 +199,23 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
       <td><a href="http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS</a></td>
     </tr>
     <tr>
-      <td>医薬品</td>
-      <td>JP_JfagyMedicationAllergen_CS</td>
-      <td><a href="http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS</a></td>
+      <td>医薬品(薬剤アレルギー用コード)</td>
+      <td>JP_JfagyMedicationAllergenYCM_CS</td>
+      <td><a href="http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS</a></td>
+    </tr>
+    <tr>
+      <td>医薬品(薬剤成分アレルギー用コード)</td>
+      <td>JP_JfagyMedicationAllergenGCM_CS</td>
+      <td><a href="http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS</a></td>
     </tr>
   </tbody>
 </table>
 
   - 食品（JP_JfagyFoodAllergen_CS）CodeSystemには、すべてのJFAGY食品コード("00F"を含む)、および食品ダミーコード("D9F000000000")が含まれ、コード構成にはメタコード3桁が先頭に含まれる。
   - 非食品・非医薬品（JP_JfagyNonFoodNonMedicationAllergen_CS）CodeSystemには、すべてのJFAGY非食品・非医薬品コード("00N"を含む)、および非食品・非医薬品ダミーコード("D9N000000000")が含まれ、コード構成にはメタコード3桁が先頭に含まれる。
-  - 医薬品（JP_JfagyMedicationAllergen_CS）CodeSystemには、保険診療適用可能な範囲の医薬品コードである「個別医薬品コード（YJコード）リストコード」、医薬品ダミーコード（"D9M000000000"）、および医薬品アレルゲン"00M"コードが含まれる。コード構成にはメタコード3桁が先頭に含まれる。<br>
-
-  なお、現時点では、厚生労働省一般処方マスターのコード、WHOーATC分類コードは、厚生労働省電子カルテ情報共有サービスで使用しないため含まれない。
+  - 医薬品（薬剤アレルギー用コード）（JP_JfagyMedicationAllergenYCM_CS）CodeSystemには、保険診療適用可能な範囲の医薬品コードである「個別医薬品コード（YJコード）リストコード」、医薬品ダミーコード（"D9M000000000"）、および医薬品アレルゲン"00M"コードが含まれる。コード構成にはメタコード3桁が先頭に含まれる。<br>
+  - 医薬品（薬剤成分アレルギー用コード）（JP_JfagyMedicationAllergenGCM_CS）CodeSystemには、保険診療適用可能な範囲の医薬品に含まれる成分に対するコードである「薬剤成分アレルギーコード」が含まれる。コード構成にはメタコード3桁が先頭に含まれる。<br>
+  なお、現時点では、厚生労働省一般処方マスターのコード、WHOーATC分類コードは、厚生労働省電子カルテ情報共有サービスにおけるアレルギーコードとしては使用しないため、含まれない。
 
 ###  対応するValueSet
 
@@ -231,8 +236,9 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 
 <br>含まれるCodeSystem:   
 
+  - JP_JfagyMedicationAllergenYCM_CS
+  - JP_JfagyMedicationAllergenGCM_CS
   - JP_JfagyFoodAllergen_CS
-  - JP_JfagyMedicationAllergen_CS
   - JP_JfagyNonFoodNonMedicationAllergen_CS
 
 ##  コード表入手先・ダウンロード先
@@ -240,16 +246,8 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 
 ###  CSV、エクセル形式
   - [JFAGYコード表（エクセル）](https://jpfhir.jp/fhir/core/terminology/JFAGY/excel_files/JFAGY_20240709V2.xlsx) （医薬品領域を除く）[Copyright CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.ja#s3)
-  - [個別医薬品コード表](http://www.capstandard.jp/)
-  - [厚生労働省一般処方マスター](https://www.mhlw.go.jp/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shohosen_200401.html)
+  - [個別医薬品コード（YJコード）リスト](http://www.capstandard.jp/)
 
-###  FHIR CodeSystem JSON形式
-
-  - 準備中
-
-###  FHIR CodeSystem FSH形式
-
-  - 準備中
 
 
 
