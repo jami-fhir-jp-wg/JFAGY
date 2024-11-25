@@ -83,12 +83,10 @@ jobs:
         ruby ./script/create_symbolic_link_from_file2url.rb
         : # 次の行のmakeSymbolicLink.bashは、直上のrubyスクリプトによって新たに作成されるbashスクリプトで、symbolic_linkを実際にln -s コマンドを順に実行して作成するスクリプト。
         : # cat makeSymbolicLink.bash
-        mkdir -p ${{ env.release_version }}
         cd output
         source ../makeSymbolicLink.bash
         cd ..
-        cp -r output ${{ env.release_version }}
-        cp -r download_files ${{ env.release_version }}
+        cp -r download_files /output/download_files
         
     - name: ssh key generate
       run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
@@ -97,6 +95,5 @@ jobs:
 
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete ${{ env.release_version }}  ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/ --exclude .htaccess
-        : # ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/${{ env.release_version }} ; tar xzf output.tgz; tar xzf download_files.tgz;'
-
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output  ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/ --exclude .htaccess
+        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/; mv output ${{ env.release_version }}
