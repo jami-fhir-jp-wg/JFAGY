@@ -86,7 +86,7 @@ jobs:
         cd output
         source ../makeSymbolicLink.bash
         cd ..
-        cp -r download_files /output/download_files
+        cp -r download_files /output/
         
     - name: ssh key generate
       run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
