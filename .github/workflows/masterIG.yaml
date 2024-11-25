@@ -94,4 +94,4 @@ jobs:
     - name: rsync remote-site-deploy
       run: |
         rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output download_files ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/ --exclude .htaccess
-        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/; mv output ${{ env.release_version }}; mv download_files ${{ env.release_version }}'
+        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/core/terminology/JFAGY/; mkdir ${{ env.release_version }}; mv output ${{ env.release_version }}/output; mv download_files ${{ env.release_version }}/download_files'
