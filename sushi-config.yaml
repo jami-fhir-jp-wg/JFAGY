@@ -30,6 +30,8 @@ jurisdiction: 'urn:iso:std:iso:3166#JP'
 pages:
   index.md:
     title: JFAGY
+  download.md:
+    title: CSV・Excelダウンロード
   history.md:
     title: 改訂履歴
 #-------------------------------------
@@ -40,6 +42,8 @@ menu:
     本文: index.html
   Artifacts: 
     Artifacts: artifacts.html
+  ダウンロード:
+    CSV・Excelダウンロード:download.html
   改訂履歴: history.html
     
 #-----------------------------------------
