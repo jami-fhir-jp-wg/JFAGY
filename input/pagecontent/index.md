@@ -240,11 +240,9 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 ##  コード表入手先・ダウンロード先
 ここに収載のコード表は、それぞれ著作権、使用範囲の制限があるものがありますので、各ページ記載情報に留意してください。
 
-###  CSV、エクセル形式
-  - [JFAGYコード表（エクセル、CSV、仕様）](https://jpfhir.jp/fhir/core/terminology/JFAGY/donwload/index.html) （医薬品領域を除く）
-  [Copyright CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.ja#s3)
-  - [個別医薬品コード（YJコード）リスト](http://www.capstandard.jp/)
+<br>
 
+[【ダウンロード用ページへ】](download.html)
 
 
 
