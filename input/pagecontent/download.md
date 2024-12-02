@@ -8,7 +8,7 @@
   - 文字コード　UTF-8またはShiftJIS、BOMなし
   - 改行コード　CR LF
 
-詳細仕様は、<a fref="download_files/JFAGY_J9FN_CSV_Format_v1.pdf">こちらをダウンロード</a>
+詳細仕様は、<a ref="download_files/JFAGY_J9FN_CSV_Format_v1.pdf">こちらをダウンロード</a>
 
 <table border="1" class="table-page" style="border-collapse: collapse">
   <thead>
@@ -27,11 +27,11 @@
       <td  rowspan="2">1</td>
       <td  rowspan="2">2024-07-09-V2</td>
       <td>UTF-8</td>
-      <td><A href="download_files/utf8/JFAGY_J9FN_20240709_R01.csv">JFAGY_J9FN_20240709_R01.csv</a></td>
+      <td><A href="download_files/utf8/JFAGY_J9FN_20240709_R01-utf8.zip">JFAGY_J9FN_20240709_R01-utf8.zip</a></td>
       <td rowspan="2">CSV形式の初回リリース</td>
     </tr>
       <tr><td>CSV</td>
-          <td><A href="download_files/sj/JFAGY_J9FN_20240709_R01.csv">JFAGY_J9FN_20240709_R01.csv</a></td>
+          <td><A href="download_files/sj/JFAGY_J9FN_20240709_R01-sjis.zip">JFAGY_J9FN_20240709_R01-sjis.zip</a></td>
       </tr>
   </tbody>
 </table>
