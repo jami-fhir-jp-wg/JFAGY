@@ -17,7 +17,7 @@
       <th>同日内版数</th>
       <th>元データバージョン日付</th>
       <th>文字コード</th>
-      <th>ファイル名リンク</th>
+      <th>ファイル名リンク(*3)</th>
       <th>備考</th>
     </tr>
   </thead>
@@ -26,15 +26,18 @@
       <td  rowspan="2">2024-11-25</td>
       <td  rowspan="2">1</td>
       <td  rowspan="2">2024-07-09-V2</td>
-      <td>UTF-8</td>
+      <td>UTF-8 (*1)</td>
       <td><A href="download_files/utf8/JFAGY_J9FN_20240709_R01-utf8.zip">JFAGY_J9FN_20240709_R01-utf8.zip</a></td>
       <td rowspan="2">CSV形式の初回リリース</td>
     </tr>
-      <tr><td>CSV</td>
+      <tr><td>shift-jis (*2)</td>
           <td><A href="download_files/sj/JFAGY_J9FN_20240709_R01-sjis.zip">JFAGY_J9FN_20240709_R01-sjis.zip</a></td>
       </tr>
   </tbody>
 </table>
+*1 utf-8: MacOS でデフォルトで使用される文字コード。Excelではデフォルトでshift-jisコードが使われることがある。<br>
+*2 shift-jis : WindowsのExcelなどでデフォルトで使用されることが多い文字コード<br>
+*3 ブラウザのセキュリティー設定によってはzip圧縮形式のファイルをリンク先クリックだけではダウンロードできない場合がある。右ボタンクリックで表示されるメニューから「名前をつけて保存する」ことでダウンロードできることがある。zip形式のファイルを展開後のCSVファイル名は、utf-8、shift-jisの文字コードによらず同一ファイル名であるので、注意すること。
 
 <br>
 
