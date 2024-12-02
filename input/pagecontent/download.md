@@ -8,7 +8,7 @@
   - 文字コード　UTF-8またはShiftJIS、BOMなし
   - 改行コード　CR LF
 
-詳細仕様は、<a ref="download_files/JFAGY_J9FN_CSV_Format_v1.pdf">こちらをダウンロード</a>
+詳細仕様は、<a href="download_files/JFAGY_J9FN_CSV_Format_v1.pdf">こちらをダウンロード</a>
 
 <table border="1" class="table-page" style="border-collapse: collapse">
   <thead>
