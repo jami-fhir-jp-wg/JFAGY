@@ -56,7 +56,7 @@ CSVファイルのデータカラムに加えて、ツリー形式表示用カ�
   <tbody>
     <tr>
       <td>2024-07-09-V2</td>
-      <td><A href="download_files/JFAGY_20240709V2.xlsx">JFAGY_20240709V2.xlsx</a></td>
+      <td><A href="download_files/JFAGY_20240709V3.xlsx">JFAGY_20240709V3.xlsx</a></td>
       <td></td>
     </tr>
   </tbody>
