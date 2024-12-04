@@ -23,7 +23,7 @@
   </thead>
   <tbody>
     <tr>
-      <td  rowspan="2">2024-11-25</td>
+      <td  rowspan="2">2024-12-05</td>
       <td  rowspan="2">1</td>
       <td  rowspan="2">2024-07-09-V3</td>
       <td>UTF-8 (*1)</td>
@@ -55,7 +55,7 @@ CSVファイルのデータカラムに加えて、ツリー形式表示用カ�
   </thead>
   <tbody>
     <tr>
-      <td>2024-07-09-V2</td>
+      <td>2024-07-09-V3</td>
       <td><A href="download_files/JFAGY_20240709V3.xlsx">JFAGY_20240709V3.xlsx</a></td>
       <td></td>
     </tr>
