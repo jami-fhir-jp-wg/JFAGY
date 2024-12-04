@@ -25,7 +25,7 @@
     <tr>
       <td  rowspan="2">2024-11-25</td>
       <td  rowspan="2">1</td>
-      <td  rowspan="2">2024-07-09-V2</td>
+      <td  rowspan="2">2024-07-09-V3</td>
       <td>UTF-8 (*1)</td>
       <td><A href="download_files/utf8/JFAGY_J9FN_20240709_R01-utf8.zip">JFAGY_J9FN_20240709_R01-utf8.zip</a></td>
       <td rowspan="2">CSV形式の初回リリース</td>
