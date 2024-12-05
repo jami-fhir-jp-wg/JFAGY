@@ -1,6 +1,13 @@
 
 ###  J-FAGYアレルゲンコード表のダウンロードページ
 
+J-FAGYアレルゲンコードの概要と解説については、[【こちら】](index.html)をご覧ください。<br>
+このページに掲載している情報、ファイルの著作権は次のとおりです。<br>
+
+著作権表示：Copyright　国立大学法人東京大学、一般社団法人日本医療情報学会<br>
+発行者：東京大学大学院医学系研究科医療情報学分野<br>
+著作権ポリシー：CC BY 4.0(<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">表示 4.0 国際</a>)<br>
+
 #### CSVファイル
   - カンマ区切りのテキスト形式
   - 各カラムは二重引用符で囲まれる。
@@ -23,7 +30,7 @@
   </thead>
   <tbody>
     <tr>
-      <td  rowspan="2">2024-12-05</td>
+      <td  rowspan="2">2024-11-25</td>
       <td  rowspan="2">1</td>
       <td  rowspan="2">2024-07-09-V3</td>
       <td>UTF-8 (*1)</td>
@@ -55,7 +62,7 @@ CSVファイルのデータカラムに加えて、ツリー形式表示用カ�
   </thead>
   <tbody>
     <tr>
-      <td>2024-07-09-V3</td>
+      <td>2024-07-09-V2</td>
       <td><A href="download_files/JFAGY_20240709V3.xlsx">JFAGY_20240709V3.xlsx</a></td>
       <td></td>
     </tr>

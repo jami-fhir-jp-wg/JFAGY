@@ -242,6 +242,10 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
 
 [【ダウンロード用ページへ】](download.html)
 
+##  参考文献
 
+  - [Kawazoe,Y. et.al.Development of a code system for allergens and its integration into the HL7 FHIR AllergyIntolerance resource](https://www.sciencedirect.com/science/article/pii/S1386505624004027)
+  - 河添 悦昌, 永島 里美, 大江 和彦. アレルギー情報の標準化を目指すJ-FAGYアレルゲン用語集. 第43回医療情報学連合大会.2023
+  - [河添 悦昌, 永島 里美, 大江 和彦. アレルギー情報の標準化を目指すJ-FAGYアレルゲン用語集とアレルゲンコードシステム. 第42回医療情報学連合大会.2022](https://mhlw-grants.niph.go.jp/system/files/report_pdf/202222057A-sonota2.pdf)
 
 {% include markdown-link-references.md %}
