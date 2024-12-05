@@ -73,8 +73,8 @@ CSVファイルのデータカラムに加えて、ツリー形式表示用カ�
 ###  参考情報
   - [個別医薬品コード（YJコード）リストの掲載ページ](http://www.capstandard.jp/)
 
-
-      
+### 問い合わせ先
+  - email: office＠jpfhir.jp 　(＠を全角から半角に変更してください。)
 
 
 {% include markdown-link-references.md %}

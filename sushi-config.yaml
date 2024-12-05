@@ -8,20 +8,18 @@ canonical: http://jpfhir.jp/fhir/core/terminology/JFAGY
 name: JFAGY
 title: "J-FAGYアレルゲンコード"
 description: "J-FAGYアレルゲンコード"
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
 status: active # draft | active | retired | unknown
 version: "2024.12.05"
 date: 2024-12-05
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+license: CC-BY4.0
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: 国立大学法人東京大学（大学院医学系研究科医療情報学分野）
-  url: http://www.m.u-tokyo.ac.jp/medinfo/JFAGY
-  # email: test@example.org
+  url: https://jpfhir.jp/fhir/core/terminology/JFAGY/
+  email: office@jpfhir.jp
 copyright: 国立大学法人東京大学、（一社）日本医療情報学会 CC BY-ND 4.0 （クリエイティブ・コモンズ 表示-改変禁止 4.0 国際 パブリック・ライセンス）
 jurisdiction: 'urn:iso:std:iso:3166#JP'
 
