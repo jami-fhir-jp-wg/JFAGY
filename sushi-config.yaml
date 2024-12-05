@@ -14,7 +14,7 @@ date: 2024-12-05
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
-license: CC-BY4.0
+#license: CC-BY4.0
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: 国立大学法人東京大学（大学院医学系研究科医療情報学分野）
