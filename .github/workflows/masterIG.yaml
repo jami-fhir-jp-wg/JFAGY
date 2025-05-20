@@ -10,7 +10,7 @@ on:
   pull_request:
     branches: [ master ]
 env:
-  release_version : 20241125
+  release_version : 20250401
 jobs:
   turn1:
     runs-on: ubuntu-22.04
