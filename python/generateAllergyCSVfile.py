@@ -1,7 +1,8 @@
 # 入力ファイルはカンマ区切りCSVファイル（UTF8 LF) 1行目ヘッダあり
 # 入力ファイルはエクセル公開ファイルをエクセルの機能でCSV(UTF-8)保存したもので、ヘッダはその後に以下に置換してあるファイル。
-# 出力ファイルはカンマ区切り、二重引用符囲み、CSVファイル（UTF8 CRLF)　 1行目ヘッダあり
+# 出力ファイルはカンマ区切り、二重引用符囲み、CSVファイル（UTF8 CRLF)　 1行目ヘッダあり MacOSで普通にSAVEするとBOM付きになるのでBOMを削除処理すること。
 # 出力ファイル名は第２パラメータ（path付き）で指定すること 出力は、第２パラメータのフォルダ名とファイル名の間にutf8フォルダまたはsjsフォルダを指定して、それぞれUTF8 CRLF と Shift-JIS CRLF の２つを生成する
+# 例：cd GitHub/JFAGY/; python3 python/generateAllergyCSVfile.py download_files/JFAGY_20250401V2.csv  ./download_files/JFAGY_J9FN_20250401_R01  
 
 import re
 import sys
