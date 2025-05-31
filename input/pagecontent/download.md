@@ -30,7 +30,7 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
   </thead>
   <tbody>
     <tr>
-      <td  rowspan="2">2025-05-21</td>
+      <td  rowspan="2">2025-05-22</td>
       <td  rowspan="2">1</td>
       <td  rowspan="2">2025-04-01-V2</td>
       <td>UTF-8 (*1)</td>
@@ -45,11 +45,11 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
       <td  rowspan="2">1</td>
       <td  rowspan="2">2024-07-09-V3</td>
       <td>UTF-8 (*1)</td>
-      <td><A href="download_files/utf8/JFAGY_J9FN_20250709_R01-utf8.zip">JFAGY_J9FN_20250709_R01-utf8.zip</a></td>
+      <td><A href="download_files/utf8/JFAGY_J9FN_20240709_R01-utf8.zip">JFAGY_J9FN_20240709_R01-utf8.zip</a></td>
       <td rowspan="2">CSV形式の初回リリース</td>
     </tr>
       <tr><td>shift-jis (*2)</td>
-          <td><A href="download_files/sj/JFAGY_J9FN_20250709_R01-sjis.zip">JFAGY_J9FN_20250709_R01-sjis.zip</a></td>
+          <td><A href="download_files/sj/JFAGY_J9FN_20240709_R01-sjis.zip">JFAGY_J9FN_20240709_R01-sjis.zip</a></td>
       </tr>
   </tbody>
 </table>
