@@ -9,8 +9,8 @@ name: JFAGY
 title: "J-FAGYアレルゲンコード"
 description: "J-FAGYアレルゲンコード"
 status: active # draft | active | retired | unknown
-version: "2025.05.31"
-date: 2025-05-31
+version: "2025.06.03"
+date: 2025-06-04
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: release
