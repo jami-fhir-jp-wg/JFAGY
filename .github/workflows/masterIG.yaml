@@ -2,15 +2,15 @@ name: Punlishing IG for JFAGY without production of packages
 on:
   push:
     branches: 
-      - master
+      - 2026.5
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
       - '.github/workflows/masterIG.yaml'
   pull_request:
-    branches: [ master ]
+    branches: [ 2026.5 ]
 env:
-  release_version : 20250401
+  release_version : 20260531
 jobs:
   turn1:
     runs-on: ubuntu-22.04
