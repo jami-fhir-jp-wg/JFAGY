@@ -4,6 +4,8 @@
 アレルギー原因物質のコード表JFAGYは、「食品」、「非医薬品・食品」のカテゴリーに分けて、アレルゲンのコードを定義したコード表です。<br>
 また、「医薬品」については、個別医薬品コード（通称YJコード）、薬剤成分アレルギー用コード(注1)、WHO-ATCコードのいずれかを使用して表現できるようになっています。ただし、電子カルテ情報共有サービスでは、このうち個別医薬品コード（通称YJコード）、薬剤成分アレルギー用コードのどちらかを使用することになっています。
 
+###  最新版：　2026-05-31  [【ダウンロード用ページへ】](download.html)
+
 ###  JFAGYアレルゲンコードの概要
 JFAGYコードは、メタコードと呼ばれる3文字コード列と、それに続く文字コード列の結合した文字コード（コアコード）により表現される。
 
@@ -226,12 +228,12 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
   - JP_JfagyFoodAllergen_CS
   - JP_JfagyNonFoodNonMedicationAllergen_CS
 
-##  コード表入手先・ダウンロード先
+###  コード表入手先・ダウンロード先
 ここに収載のコード表は、それぞれ著作権、使用範囲の制限があるものがありますので、各ページ記載情報に留意してください。
 
 [【ダウンロード用ページへ】](download.html)
 
-##  参考文献
+###  参考文献
 
   - [Kawazoe,Y. et.al.Development of a code system for allergens and its integration into the HL7 FHIR AllergyIntolerance resource](https://www.sciencedirect.com/science/article/pii/S1386505624004027)
   - 河添 悦昌, 永島 里美, 大江 和彦. アレルギー情報の標準化を目指すJ-FAGYアレルゲン用語集. 第43回医療情報学連合大会.2023
