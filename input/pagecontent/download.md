@@ -12,7 +12,7 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
   - カンマ区切りのテキスト形式
   - 各カラムは二重引用符で囲まれる。
   - カラムデータにカンマが含まれることがある。
-  - 文字コード　UTF-8またはShiftJIS、BOMなし
+  - 文字コード　UTF-8 BOMなし、またはShiftJIS
   - 改行コード　CR LF
 
 詳細仕様は、<a href="download_files/JFAGY_J9FN_CSV_Format_v1.pdf">こちらをダウンロード</a>
@@ -21,7 +21,7 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
   <thead>
     <tr>
       <th>リリース日付</th>
-      <th>同日内版数</th>
+      <th>同日データバージョン内版数</th>
       <th>元データバージョン日付</th>
       <th>文字コード</th>
       <th>ファイル名リンク(*3)</th>
@@ -29,6 +29,18 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td  rowspan="2">2026-08-23</td>
+      <td  rowspan="2">2</td>
+      <td  rowspan="2">2026-05-31-V1</td>
+      <td>UTF-8 (*1)</td>
+      <td><A href="download_files/utf8/JFAGY_J9FN_20260531_R02-utf8.zip">JFAGY_J9FN_20260531_R02-utf8.zip</a></td>
+      <td rowspan="2">各カラムは二重引用符で囲まれていなかった点と、UTF-8 BOM有りになっていた点を修正。</td>
+    </tr>
+      <tr><td>shift-jis (*2)</td>
+          <td><A href="download_files/sj/JFAGY_J9FN_20260531_R02-sjis.zip">JFAGY_J9FN_20260531_R02-sjis.zip</a></td>
+      </tr>
+    <tr>
     <tr>
       <td  rowspan="2">2026-05-31</td>
       <td  rowspan="2">1</td>
