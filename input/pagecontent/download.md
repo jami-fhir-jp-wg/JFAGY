@@ -17,7 +17,7 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
 
 詳細仕様は、<a href="download_files/JFAGY_J9FN_CSV_Format_v1.pdf">こちらをダウンロード</a>
 
-<table border="1" class="table-page" style="border-collapse: collapse">
+<table bordercolor="black" class="table-page" style="border-collapse: collapse" >
   <thead>
     <tr>
       <th>リリース日付</th>
@@ -40,7 +40,6 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
       <tr><td>shift-jis (*2)</td>
           <td><A href="download_files/sj/JFAGY_J9FN_20260531_R02-sjis.zip">JFAGY_J9FN_20260531_R02-sjis.zip</a></td>
       </tr>
-    <tr>
     <tr>
       <td  rowspan="2">2026-05-31</td>
       <td  rowspan="2">1</td>
@@ -88,7 +87,7 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
 
 CSVファイルのデータカラムに加えて、ツリー形式表示用カラムなどが追加されています。
 
-<table border="1" class="table-page" style="border-collapse: collapse">
+<table border="2" bordercolor="black" class="table-page" style="border-collapse: collapse">
   <thead>
     <tr>
       <th>データバージョン日付</th>
