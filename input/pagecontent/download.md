@@ -17,7 +17,7 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
 
 詳細仕様は、<a href="download_files/JFAGY_J9FN_CSV_Format_v1.pdf">こちらをダウンロード</a>
 
-<table bordercolor="black" class="table-page" style="border-collapse: collapse" >
+<table border="2" bordercolor="black" class="table-page" style="border-collapse: collapse">
   <thead>
     <tr>
       <th>リリース日付</th>
