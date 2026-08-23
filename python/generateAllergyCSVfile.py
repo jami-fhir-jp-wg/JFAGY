@@ -9,7 +9,7 @@ import sys
 import csv
 import os
 
-with open(sys.argv[1], "r",  encoding='utf-8', newline='') as f:  # encoding='shift_jis', encoding='utf-8' newline=None, ''(改行コードの自動変換なし), '\n', '\r', '\r\n'
+with open(sys.argv[1], "r",  encoding='utf-8-sig', newline='') as f:  # encoding='shift_jis', encoding='utf-8' newline=None, ''(改行コードの自動変換なし), '\n', '\r', '\r\n'
     reader = csv.reader(f, delimiter=',' )   # quoting=csv.QUOTE_NONE によりcsv.QUOTE_NONEとすると、引用符に対して特別な処理がされなくなる。引用符で囲まれた部分の区切り文字も要素の区切りとして扱われる。
     filename = os.path.basename(sys.argv[2])
     pathfolder = os.path.dirname(sys.argv[2])
@@ -18,7 +18,7 @@ with open(sys.argv[1], "r",  encoding='utf-8', newline='') as f:  # encoding='sh
         for row in reader:
             writer.writerow(row)
 
-with open(sys.argv[1], "r",  encoding='utf-8', newline='') as f:  # encoding='shift_jis', encoding='utf-8' newline=None, ''(改行コードの自動変換なし), '\n', '\r', '\r\n'
+with open(sys.argv[1], "r",  encoding='utf-8-sig', newline='') as f:  # encoding='shift_jis', encoding='utf-8' newline=None, ''(改行コードの自動変換なし), '\n', '\r', '\r\n'
     reader = csv.reader(f, delimiter=',' )   # quoting=csv.QUOTE_NONE によりcsv.QUOTE_NONEとすると、引用符に対して特別な処理がされなくなる。引用符で囲まれた部分の区切り文字も要素の区切りとして扱われる。
     filename = os.path.basename(sys.argv[2])
     pathfolder = os.path.dirname(sys.argv[2])
