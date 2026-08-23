@@ -35,7 +35,7 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
       <td  rowspan="2">2026-05-31-V1</td>
       <td>UTF-8 (*1)</td>
       <td><A href="download_files/utf8/JFAGY_J9FN_20260531_R02-utf8.zip">JFAGY_J9FN_20260531_R02-utf8.zip</a></td>
-      <td rowspan="2">各カラムは二重引用符で囲まれていなかった点と、UTF-8 BOM有りになっていた点を修正。</td>
+      <td rowspan="2">各カラムが二重引用符で囲まれていなかった点と、UTF-8ファイルでBOM有りになっていた点を修正。<br>zipファイルを展開した時にutf8フォルダまたはsjisフォルダが作成され、その中にファイルが展開されるように変更。</td>
     </tr>
       <tr><td>shift-jis (*2)</td>
           <td><A href="download_files/sj/JFAGY_J9FN_20260531_R02-sjis.zip">JFAGY_J9FN_20260531_R02-sjis.zip</a></td>
@@ -76,6 +76,8 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
       </tr>
   </tbody>
 </table>
+
+
 *1 utf-8: MacOS でデフォルトで使用される文字コード。Excelではデフォルトでshift-jisコードが使われることがある。<br>
 *2 shift-jis : WindowsのExcelなどでデフォルトで使用されることが多い文字コード<br>
 *3 ブラウザのセキュリティー設定によってはzip圧縮形式のファイルをリンク先クリックだけではダウンロードできない場合がある。右ボタンクリックで表示されるメニューから「名前をつけて保存する」ことでダウンロードできることがある。zip形式のファイルを展開後のCSVファイル名は、utf-8、shift-jisの文字コードによらず同一ファイル名であるので、注意すること。
