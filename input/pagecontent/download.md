@@ -35,7 +35,7 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
       <td  rowspan="2">2026-05-31-V1</td>
       <td>UTF-8 (*1)</td>
       <td><A href="download_files/utf8/JFAGY_J9FN_20260531_R02-utf8.zip">JFAGY_J9FN_20260531_R02-utf8.zip</a></td>
-      <td rowspan="2">各カラムが二重引用符で囲まれていなかった点と、UTF-8ファイルでBOM有りになっていた点を修正。<br>zipファイルを展開した時にutf8フォルダまたはsjisフォルダが作成され、その中にファイルが展開されるように変更。</td>
+      <td rowspan="2">2026-05-31リリース版で各カラムが二重引用符で囲まれていなかった点と、UTF-8ファイルでBOM有りになっていた点を修正。<br>zipファイルを展開した時にutf8フォルダまたはsjisフォルダが作成され、その中にファイルが展開されるように改善。</td>
     </tr>
       <tr><td>shift-jis (*2)</td>
           <td><A href="download_files/sj/JFAGY_J9FN_20260531_R02-sjis.zip">JFAGY_J9FN_20260531_R02-sjis.zip</a></td>
@@ -45,11 +45,11 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
       <td  rowspan="2">1</td>
       <td  rowspan="2">2026-05-31-V1</td>
       <td>UTF-8 (*1)</td>
-      <td><A href="download_files/utf8/JFAGY_J9FN_20260531_R01-utf8.zip">JFAGY_J9FN_20260531_R01-utf8.zip</a></td>
+      <td>JFAGY_J9FN_20260531_R01-utf8.zip (旧版のためリンク削除)</td>
       <td rowspan="2">「食用鳥卵,落花生,いか類,マカデミアナッツ,やまのいも」について消費者庁による特定原材料等の表記である、「卵,落花生（ピーナッツ）,いか,マカダミアナッツ,やまいも」にそれぞれ変更。コード変更はなし。</td>
     </tr>
       <tr><td>shift-jis (*2)</td>
-          <td><A href="download_files/sj/JFAGY_J9FN_20260531_R01-sjis.zip">JFAGY_J9FN_20260531_R01-sjis.zip</a></td>
+          <td>JFAGY_J9FN_20260531_R01-sjis.zip (旧版のためリンク削除)</td>
       </tr>
     <tr>
       <td  rowspan="2">2025-06-03</td>
