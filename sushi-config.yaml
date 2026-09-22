@@ -5,6 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: jpfhir.jp.fhir.core.terminology.JFAGY
 canonical: http://jpfhir.jp/fhir/core/terminology/JFAGY
+
 name: JFAGY
 title: "J-FAGYアレルゲンコード"
 description: "J-FAGYアレルゲンコード"
