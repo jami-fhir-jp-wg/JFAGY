@@ -108,6 +108,11 @@ CSVファイルのデータカラムに加えて、ツリー形式表示用カ�
   </thead>
   <tbody>
     <tr>
+      <td>2026-09-25-V1</td>
+      <td><A href="download_files/JFAGY_20260925V1.xlsx">JFAGY_20260925V1.xlsx</a></td>
+      <td></td>
+    </tr>
+    <tr>
       <td>2026-05-31-V1</td>
       <td><A href="download_files/JFAGY_20260531V1.xlsx">JFAGY_20260531V1.xlsx</a></td>
       <td></td>
