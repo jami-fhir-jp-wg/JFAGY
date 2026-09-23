@@ -6,7 +6,8 @@ Description: "JFAGY アレルゲンコード（食品）"
 * ^status = #active
 * ^experimental = false
 * ^date = "2026-09-25"
-* ^version = "260925.1.0"
+* ^version = "2026.9.25"
+* ^language = #ja
 * ^caseSensitive = true
 * ^hierarchyMeaning = #is-a
 * ^content = #complete
