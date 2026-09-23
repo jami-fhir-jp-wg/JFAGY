@@ -216,7 +216,7 @@ FHIR規格でJFAGYコードおよびその体系を使用するために次のCo
   <tbody>
     <tr>
       <td>JP_AllergyIntolerance_VS</td>
-      <td><a href="http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS">http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS</a></td>
+      <td><a href="https://jpfhir.jp/fhir/core/terminology/igv2-latest/ValueSet-JP_AllergyIntolerance_VS.html">http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS</a></td>
     </tr>
   </tbody>
 </table>
