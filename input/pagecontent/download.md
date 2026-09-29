@@ -46,11 +46,11 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
       <td  rowspan="2">1</td>
       <td  rowspan="2">2026-09-25-V1</td>
       <td>UTF-8 (*1)</td>
-      <td><A href="download_files/utf8/JFAGY_J9FN_20260925_R01-utf8.zip">JFAGY_J9FN_20260925_R01-utf8.zip</a></td>
+      <td>JFAGY_J9FN_20260925_R01-utf8.zip (旧版のためリンク削除)</td>
       <td rowspan="2">青魚、ナッツ類を追加。その他、表示名称の修正など（履歴参照）</td>
     </tr>
       <tr><td>shift-jis (*2)</td>
-          <td><A href="download_files/sj/JFAGY_J9FN_20260925_R01-sjis.zip">JFAGY_J9FN_20260925_R01-sjis.zip</a></td>
+          <td>JFAGY_J9FN_20260925_R01-sjis.zip (旧版のためリンク削除)</td>
       </tr>
 
     <tr>
