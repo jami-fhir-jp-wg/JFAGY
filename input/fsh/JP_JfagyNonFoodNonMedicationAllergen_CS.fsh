@@ -5,7 +5,7 @@ Description: "JP Core JFAGY アレルゲンコード（非食品・非医薬品�
 * ^url = $JP_JfagyNonFoodNonMedicationAllergen_CS
 * ^status = #active
 * ^experimental = false
-* ^date = "2026-09-25"
+* ^date = "2026-09-29"
 * ^version = "2026.9.25"
 * ^language = #ja
 * ^caseSensitive = true
@@ -15,7 +15,6 @@ Description: "JP Core JFAGY アレルゲンコード（非食品・非医薬品�
 * ^publisher = "東京大学大学院医学系研究科医療情報学分野"
 
 * #00N "非食品・非医薬品"
-  * #D9N000000000 "非食品・非医薬品ダミーコード"
   * #J9NJ00000000 "動物"
     * #J9NJ11000000 "鳥類"
       * #J9NJ11110000 "アヒル"
