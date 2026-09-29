@@ -38,7 +38,7 @@ J-FAGYアレルゲンコードの概要と解説については、[【こちら�
       <td rowspan="2">2026.05.31版修正の一部反映されていない（元に戻っていた）のを修正（マカデミアナッツ → マカダミアナッツ、やまのいも → やまいも）<br>文字重複が2箇所で新たに発生していたので修正（重複を削除）J9FA32990000 「かじつ、しゅじつ（（しょうさいふめい）」で「（」が重複、J9FB12000015「ヨーーグルト」で長音「ー」が重複<br>sjis版の文字コードが不正であったのを修正</td>
     </tr>
       <tr><td>shift-jis (*2)</td>
-          <td><A href="download_files/sj/JFAGY_J9FN_20260925_R02-sjis.zip">JFAGY_J9FN_20260925_R01-sjis.zip</a></td>
+          <td><A href="download_files/sj/JFAGY_J9FN_20260925_R02-sjis.zip">JFAGY_J9FN_20260925_R02-sjis.zip</a></td>
       </tr>
 
     <tr>
