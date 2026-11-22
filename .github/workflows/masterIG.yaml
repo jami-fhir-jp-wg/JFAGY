@@ -9,6 +9,10 @@ on:
       - '.github/workflows/masterIG.yaml'
   pull_request:
     branches: [ 2026.9 ]
+concurrency:
+  group: jfagy-jpfhir-publish
+  cancel-in-progress: false
+  queue: single
 env:
   release_version : 20260925
   release_edition : R02
