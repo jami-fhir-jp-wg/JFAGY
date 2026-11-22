@@ -10,7 +10,7 @@ on:
   pull_request:
     branches: [ 2026.9 ]
 concurrency:
-  group: jfagy-jpfhir-publish
+  group: ${{ github.event_name == 'pull_request' && format('jfagy-jpfhir-pr-{0}', github.event.pull_request.number) || 'jfagy-jpfhir-publish' }}
   cancel-in-progress: false
   queue: single
 permissions: {}
