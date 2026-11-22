@@ -7,8 +7,6 @@ on:
       - 'sushi-config.yaml'
       - 'input/**'
       - '.github/workflows/masterIG.yaml'
-  pull_request:
-    branches: [ 2026.9 ]
 concurrency:
   group: jfagy-jpfhir-publish
   cancel-in-progress: false
