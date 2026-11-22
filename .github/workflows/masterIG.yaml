@@ -1,4 +1,4 @@
-name: Punlishing IG for JFAGY without production of packages
+name: Publishing IG for JFAGY without production of packages
 on:
   push:
     branches: 
